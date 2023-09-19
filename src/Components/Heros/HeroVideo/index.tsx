@@ -44,14 +44,14 @@ export const HeroVideo = ({ youtubeId, title, text }: HeroVideoProps) => {
           variants={titleVariants}
           initial="initial"
           animate="visible"
-          className="text-[40px] lg:text-[120px] text-white font-inter">
+          className="text-[40px] lg:text-[120px] text-sp-secondary-300 font-inter">
           {title}
         </motion.p>
         <motion.p
           variants={textVariants}
           initial="initial"
           animate="visible"
-          className="text-[20px] lg:text-[70px] text-white font-inter">
+          className="text-[20px] lg:text-[70px] text-sp-secondary-300 font-inter">
           {text}
         </motion.p>
       </div>

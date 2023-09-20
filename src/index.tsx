@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
 import './index.css';
 import { FooterOne } from './Components/Footers/FooterOne';
 import { HeaderOne } from './Components/Headers/HeaderOne';
+import logo from './Images/TNTLogo.png';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -12,7 +13,7 @@ const root = ReactDOM.createRoot(
 const Layout = () => {
   return (
     <>
-      <HeaderOne />
+      <HeaderOne tntImage={logo} />
       <Outlet />
       <FooterOne />
     </>

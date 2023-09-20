@@ -1,38 +1,20 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-// import TNTLogo from '../../../Images/TNT-Racing-Logo.png'
 import { LinkButton } from '../../Buttons/LinkButton';
 import { Button } from '../../Buttons/ButtonOne';
 
-export const HeaderOne = () => {
-  const [validUser, setValidUser] = useState(false);
+type HeaderOneProps = {
+  logo: string;
+};
 
-  useEffect(() => {
-    if (sessionStorage.getItem('userData')) {
-      setValidUser(true);
-    }
-  });
-
-  const handleLogout = () => {
-    const requestOptions: any = {
-      method: 'GET',
-      credentials: 'include',
-    };
-
-    fetch('http://localhost:8080/api/users/logout', requestOptions)
-      .then((res) => {
-        sessionStorage.removeItem('userData');
-        return window.location.replace('/login');
-      })
-      .catch((err) => console.log(err));
-  };
-
+export const HeaderOne = ({ logo }: HeaderOneProps) => {
   return (
     <div className="bg-sp-primary-200 h-[70px] ">
       <div className="container mx-auto px-8 flex flex-row  h-full">
         <div className="flex h-full items-center">
-          {/* <Link to={'/'}><TNTLogo /></Link> */}
-          <Link to={'/'}><p>LOGO</p></Link>
+          <Link to={'/'}>
+            <img src={logo} />
+          </Link>
         </div>
         {/* {validUser ? (
           <div className="flex flex-row w-full justify-end items-center h-full space-x-8">

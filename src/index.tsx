@@ -13,7 +13,7 @@ const root = ReactDOM.createRoot(
 const Layout = () => {
   return (
     <>
-      <HeaderOne tntImage={logo} />
+      <HeaderOne logo={logo} />
       <Outlet />
       <FooterOne />
     </>

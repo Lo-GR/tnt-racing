@@ -2,6 +2,8 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
 import './index.css';
+import { FooterOne } from './Components/Footers/FooterOne';
+import { HeaderOne } from './Components/Headers/HeaderOne';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -10,7 +12,9 @@ const root = ReactDOM.createRoot(
 const Layout = () => {
   return (
     <>
+      <HeaderOne />
       <Outlet />
+      <FooterOne />
     </>
   );
 };

@@ -4,6 +4,16 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans&family=Inter&family=Roboto&display=swap');
 
+:root {
+  --sp-primary-200: #060903;
+  --sp-primary-300: #231F20;
+  --sp-primary-400: #54482C;
+  --sp-secondary-300: #F7FDFD;
+  --sp-secondary-400: #FBFCF7;
+  --sp-secondary-500: #EFEEE6;
+  --sp-tertiary-500: #E09331;
+  --sp-tertiary-600: #F2DC4F;
+}
 
 html,
 body,
@@ -163,4 +173,9 @@ body,
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+p {
+  color: var(--sp-secondary-300);
+  font-family: 'Inter';
 }

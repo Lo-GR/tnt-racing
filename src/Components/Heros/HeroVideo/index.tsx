@@ -38,7 +38,7 @@ const textVariants = {
 
 export const HeroVideo = ({ youtubeId, title, text }: HeroVideoProps) => {
   return (
-    <div className="overflow-hidden relative w-full">
+    <div className="overflow-hidden relative w-full h-[calc(100vh-200px)] md:h-[700px]">
       <div className="absolute isolate h-full w-[4/5] z-10 flex justify-center items-start left-[10%] flex-col">
         <motion.p
           variants={titleVariants}
@@ -55,7 +55,7 @@ export const HeroVideo = ({ youtubeId, title, text }: HeroVideoProps) => {
           {text}
         </motion.p>
       </div>
-      <div className="z-3 frame-container">
+      <div className="z-3 frame-container h-full">
         <iframe
           className="w-full absolute"
           height="300"

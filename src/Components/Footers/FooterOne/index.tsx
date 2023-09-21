@@ -37,7 +37,7 @@ export const FooterOne = () => {
             <p>Accessibility</p>
             <p>Privacy Agreement</p>
           </div> */}
-          <div className="flex flex-row justify-evenly items-center w-1/2">
+          <div className="flex flex-col gap-4 md:flex-row justify-evenly items-center w-1/2">
             {socialMediaLinks.map((social) => {
               return hyperLinkGenerator(social)
             })}

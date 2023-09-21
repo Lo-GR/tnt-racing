@@ -1,10 +1,14 @@
 import ReactDOM from 'react-dom/client';
-import App from './App';
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
 import './index.css';
 import { FooterOne } from './Components/Footers/FooterOne';
 import { HeaderOne } from './Components/Headers/HeaderOne';
-import logo from './Images/TNTLogo.png';
+import logo from './images/TNTLogo.png';
+import Home from './Pages/Home';
+import { headerRoutes } from './Helpers/config';
+import { Error } from './Pages/Error';
+import { Boats } from './Pages/Boats';
+import { Drivers } from './Pages/Drivers';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -13,7 +17,7 @@ const root = ReactDOM.createRoot(
 const Layout = () => {
   return (
     <>
-      <HeaderOne logo={logo} />
+      <HeaderOne logo={logo} headerRoutes={headerRoutes} />
       <Outlet />
       <FooterOne />
     </>
@@ -23,13 +27,23 @@ const Layout = () => {
 const router = createBrowserRouter([
   {
     element: <Layout />,
-    //errorElement: <ErrorPage />,
+    errorElement: <Error />,
     children: [
       {
         path: '/',
-        element: <App />,
-        //errorElement: <ErrorPage />,
+        element: <Home />,
+        errorElement: <Error />,
       },
+      {
+        path: '/boats',
+        element: <Boats />,
+        errorElement: <Error />
+      },
+      {
+        path: '/drivers',
+        element: <Drivers />,
+        errorElement: <Error />
+      }
     ],
   },
 ]);

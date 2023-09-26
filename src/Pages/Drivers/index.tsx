@@ -1,7 +1,9 @@
+import { ProfileCard } from "../../Components/Cards/ProfileCard"
+
 export const Drivers = ({ }) => {
   return (
-    <div>
-      <p>Drivers</p>
+    <div className="container flex justify-center items-center">
+      <ProfileCard />
     </div>
   )
 }

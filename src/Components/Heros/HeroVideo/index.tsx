@@ -39,7 +39,6 @@ const textVariants = {
 export const HeroVideo = ({ youtubeId, title, text }: HeroVideoProps) => {
   return (
     <div className="overflow-hidden relative w-full h-[calc(100vh-200px)] md:h-[700px]">
-      <div className="absolute h-1/2 w-full bg-sp-primary-200 z-10 opacity-50" />
       <div className="absolute isolate h-full w-[4/5] z-10 flex justify-center items-start left-[10%] flex-col">
         <motion.p
           variants={titleVariants}

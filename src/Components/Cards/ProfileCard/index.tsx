@@ -16,10 +16,10 @@ export const ProfileCard = ({ profileImage, profileName, profileSubtitle, profil
       <div className="h-[300px] w-full lg:h-full lg:w-1/3 justify-center flex">
         <img className="h-full w-full object-cover" src={profileImage} />
       </div>
-      <div className="text-center  p-4 w-full h-96 lg:flex lg:justify-center lg:flex-col lg:pt-0 ">
+      <div className="text-center  p-4 w-full h-96 lg:flex lg:mt-16 lg:flex-col lg:pt-0 ">
         <h2 className="text-[40px]">{profileName}</h2>
         <h2 className="text-[32px]">{profileSubtitle}</h2>
-        <p className="pt-3 text-sp-primary-200">{profileDescription}</p>
+        <p className="pt-20 text-sp-primary-200">{profileDescription}</p>
       </div>
     </div>
   )

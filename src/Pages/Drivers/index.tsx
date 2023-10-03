@@ -1,13 +1,10 @@
 import { ProfileCard } from "../../Components/Cards/ProfileCard"
-import Dillon from "../../images/Dillon-Racer.jpg"
+import { profiles } from "../../Helpers/config"
 
 export const Drivers = ({ }) => {
   return (
-    <div className=" mx-auto container flex flex-col justify-center items-center gap-10">
-      <ProfileCard profileImage={Dillon} profileDescription="he drives the boats" />
-      <ProfileCard profileImage={Dillon} profileDescription="he drives the boats" />
-      <ProfileCard profileImage={Dillon} profileDescription="he drives the boats" />
-      <ProfileCard profileImage={Dillon} profileDescription="he drives the boats" />
+    <div className="mx-auto container flex flex-col justify-center items-center gap-10 p-8">
+      {profiles.map(({ image, name, role, description, position }) => <ProfileCard profileImage={image} profileName={name} profileSubtitle={role} profileDescription={description} reverse={position} />)}
     </div>
   )
 }

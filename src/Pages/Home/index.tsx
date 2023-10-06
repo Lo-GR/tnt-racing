@@ -25,7 +25,7 @@ export default function Home({ }: Props) {
       image: BoatTurn,
       alt: "Sprint Boat Turning and Navigator Navigating",
       textHeader: "Runs in the Family",
-      textContent: "TNT Racing is a family team, racing is in our blood."
+      textContent: "TNT Racing is a family team, racing courses through our veins."
     }
   ]
 
@@ -36,7 +36,7 @@ export default function Home({ }: Props) {
       <HeroVideo
         youtubeId="xpVvBpgZvFE"
         title="TNT RACING"
-        text="Something something, we gotta go fast something" />
+        text="It's in our blood" />
       <InfoBox content={infoBoxContent} />
     </div>
   )

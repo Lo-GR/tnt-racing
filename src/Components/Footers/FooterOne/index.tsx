@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import TDLogo from "../../../images/TDContractingLogo.png"
 
 export const FooterOne = () => {
 
@@ -24,9 +25,9 @@ export const FooterOne = () => {
   return (
     <div className="bg-sp-primary-200">
       <div className="container flex flex-col justify-between items-center text-2xl gap-1 mx-auto p-4">
-        <div className="container flex flex-row justify-around p-1 ">
-          <div>
-            <p className="text-sm">TNT Racing</p>
+        <div className="flex flex-col items-center w-full lg:flex-row justify-around p-1 ">
+          <div className="max-w-sm">
+            <img src={TDLogo} alt="T and D Contracting Logo" />
           </div>
           {/*
           <div>

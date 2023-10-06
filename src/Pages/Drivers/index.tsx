@@ -4,18 +4,19 @@ import { motion } from 'framer-motion';
 
 export const Drivers = ({ }) => {
   const cardVariants = {
-    visible: {
+    visible: (i: number) => ({
       opacity: 1,
       y: 0,
       transition: {
         duration: 1,
+        delay: i * .125
       },
-    },
+    }),
     initial: {
       opacity: 0,
       y: 150,
     },
-  };
+  }
 
 
   return (
@@ -24,6 +25,7 @@ export const Drivers = ({ }) => {
         return (
           <motion.div
             variants={cardVariants}
+            custom={index}
             initial="initial"
             whileInView="visible"
             viewport={{ once: true }}

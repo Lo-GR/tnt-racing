@@ -180,3 +180,9 @@ p {
   color: var(--sp-secondary-300);
   font-family: 'Inter';
 }
+
+h2 {
+  color: var(--sp-tertiary-500);
+  font-family: 'Inter';
+  font-size: 40px
+}

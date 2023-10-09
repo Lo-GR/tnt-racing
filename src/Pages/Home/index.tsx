@@ -34,7 +34,7 @@ export default function Home({ }: Props) {
   return (
     <div>
       <HeroVideo
-        youtubeId="xpVvBpgZvFE"
+        youtubeId="cJOn-z9GOIM"
         title="TNT RACING"
         text="It's in our blood" />
       <InfoBox content={infoBoxContent} />

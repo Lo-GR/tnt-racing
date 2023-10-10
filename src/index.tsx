@@ -9,17 +9,31 @@ import { headerRoutes } from './Helpers/config';
 import { Error } from './Pages/Error';
 import { Boats } from './Pages/Boats';
 import { Drivers } from './Pages/Drivers';
+import { useState } from 'react';
+import MobileNav from './Components/MobileNav';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 
 const Layout = () => {
+  const [open, setOpen] = useState(false);
+
+  const handleMobileNav = () => {
+    setOpen(!open);
+  };
+
   return (
     <>
-      <HeaderOne logo={logo} headerRoutes={headerRoutes} />
+      <HeaderOne
+        open={open}
+        handleOpen={handleMobileNav}
+        logo={logo}
+        headerRoutes={headerRoutes}
+      />
       <Outlet />
       <FooterOne />
+      <MobileNav open={open} handleOpen={handleMobileNav} />
     </>
   );
 };
@@ -37,13 +51,13 @@ const router = createBrowserRouter([
       {
         path: '/boats',
         element: <Boats />,
-        errorElement: <Error />
+        errorElement: <Error />,
       },
       {
         path: '/drivers',
         element: <Drivers />,
-        errorElement: <Error />
-      }
+        errorElement: <Error />,
+      },
     ],
   },
 ]);

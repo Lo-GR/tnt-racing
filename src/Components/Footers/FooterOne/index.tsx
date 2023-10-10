@@ -46,7 +46,7 @@ export const FooterOne = () => {
         </div>
         <div className="w-9/12 h-px bg-gradient-to-tl from-sp-tertiary-600 to-sp-tertiary-500" />
         <div>
-          <p className="text-sm">Website ©2023 Alex + Logan</p>
+          <p className="text-sm">Website ©2023 <Link className="underline" to="https://alexewilliams.com/" target="_blank">Alex</Link> + <Link className="underline" to="https://www.lo-gr.com/" target="_blank">Logan</Link></p>
         </div>
       </div>
     </div>

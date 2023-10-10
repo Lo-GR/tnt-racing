@@ -58,14 +58,14 @@ export const boats = [
   {
     image: JeepersCreepers,
     name: "Jeepers Creepers",
-    sponsors: [{ image: DogHouse, alt: "Dog House Logo" }, { image: TDLogo, alt: "T and D Contracting Logo" }],
+    sponsors: [{ image: DogHouse, alt: "Dog House Logo", link: "http://www.olypen.com/mspares/DogHouse/" }, { image: TDLogo, alt: "T and D Contracting Logo", link: "https://nextdoor.com/pages/td-contracting-inc-sequim-wa/" }],
     description: "Length: 36 ft 6. Hull: Modified Jetco. Engine: 436 CID injected methanol, pump make. Engine Size: Size is Southern pump 8.5",
     position: "lg:flex-row"
   },
   {
     image: Boat99,
     name: "Boat 99 (Name TBD)",
-    sponsors: [{ image: DogHouse, alt: "Dog House Logo" }, { image: TDLogo, alt: "T and D Contracting Logo" }],
+    sponsors: [{ image: DogHouse, alt: "Dog House Logo", link: "http://www.olypen.com/mspares/DogHouse/" }, { image: TDLogo, alt: "T and D Contracting Logo", link: "https://nextdoor.com/pages/td-contracting-inc-sequim-wa/" }],
     description: "Pending",
     position: "lg:flex-row"
   },

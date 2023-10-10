@@ -23,7 +23,7 @@ export const Boats = ({ }) => {
     <div className="mx-auto container flex flex-col justify-center items-center gap-10 px-8 py-20 ">
       <div className="bg-sp-primary-300 overflow-hidden flex flex-col justify-center items-center rounded">
         <div className=" h-[300px] w-full justify-center flex">
-          <img className="h-full w-full object-cover" src={Boat} alt="Sprint Boat in Garage" />
+          <img className="h-full w-full object-cover" src={Boat} alt="Sprint Boat turning with water in it's wake" />
         </div>
         <h3 className="py-10 px-10 lg:px-32 text-[30px] text-sp-secondary-300">
           Our boats are designed for victory, with one of our boats ranking as the third fastest in the world! We're unstoppable on the water. Join us in experiencing the thrill of high-performance sprint boats that are breaking records worldwide.

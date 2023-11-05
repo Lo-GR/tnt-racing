@@ -48,7 +48,7 @@ export const InfoBox = ({ content }: InfoBoxProps) => {
   return (
     <div className="bg-sp-primary-200 m-10 overflow-hidden">
       <motion.div
-        className="flex w-full h-[600px] flex-col items-center justify-center"
+        className="flex w-full h-[700px] flex-col items-center justify-center"
         variants={infoBoxContentVariants}
         key={currentContent.textHeader}
         initial="initial"

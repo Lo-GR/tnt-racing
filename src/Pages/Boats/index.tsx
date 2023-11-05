@@ -36,6 +36,7 @@ export const Boats = ({ }) => {
           initial="initial"
           whileInView="visible"
           viewport={{ once: true }}
+          key={`key ${index}`}
           className="w-full mx-auto">
           <BoatCard boatImage={boat.image} boatName={boat.name} boatSponsors={boat.sponsors} boatDescription={boat.description} reverse={boat.position} />
         </motion.div>)

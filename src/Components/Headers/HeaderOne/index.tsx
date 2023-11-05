@@ -33,6 +33,7 @@ export const HeaderOne = ({
             return (
               <Link
                 className="text-sp-secondary-300 text-[30px] font-bold uppercase hover:text-sp-tertiary-600"
+                key={`key ${route.title}`}
                 to={route.route}>
                 {route.title}
               </Link>

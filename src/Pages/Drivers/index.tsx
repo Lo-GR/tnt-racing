@@ -38,6 +38,7 @@ export const Drivers = ({ }) => {
             initial="initial"
             whileInView="visible"
             viewport={{ once: true }}
+            key={`key ${index}`}
             className="w-full mx-auto">
             <ProfileCard profileImage={image} profileName={name} profileSubtitle={role} profileDescription={description} reverse={position} />
           </motion.div>

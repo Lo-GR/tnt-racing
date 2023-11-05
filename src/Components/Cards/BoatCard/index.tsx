@@ -27,7 +27,7 @@ export const BoatCard = ({ boatImage, boatName, boatSponsors, boatDescription, r
         <div className="flex items-center justify-center lg:justify-start w-full gap-2">
           {boatSponsors.map((sponsor) => {
             return (
-              <Link target="_blank" to={sponsor.link}>
+              <Link target="_blank" key={`Key ${sponsor.alt}`} to={sponsor.link}>
                 <img className="max-h-20" src={sponsor.image} alt={sponsor.alt} />
               </Link>
             )

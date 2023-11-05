@@ -57,7 +57,7 @@ const MobileNav = ({ open, handleOpen }: MobileNavProps) => {
                 Home
               </p>
             </Link>
-            <Link key={'Home'} to={`/boats`}>
+            <Link key={'Boats'} to={`/boats`}>
               <p
                 className={
                   location.pathname === '/boats'
@@ -67,7 +67,7 @@ const MobileNav = ({ open, handleOpen }: MobileNavProps) => {
                 Boats
               </p>
             </Link>
-            <Link key={'Home'} to={`/drivers`}>
+            <Link key={'Drivers'} to={`/drivers`}>
               <p
                 className={
                   location.pathname === '/drivers'

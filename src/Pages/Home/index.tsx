@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { HeroVideo } from '../../Components/Heros/HeroVideo'
 import { InfoBox } from '../../Components/InfoBox'
 import BoatFlip from "../../images/Sprint-Boat-Flipping.jpg"
@@ -9,21 +9,21 @@ import { Boats } from '../Boats'
 
 type Props = {}
 
-export default function Home({ }: Props) {
-  const cardVariants = {
-    visible: (i: number) => ({
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 1,
-        delay: i * .125
-      },
-    }),
-    initial: {
-      opacity: 0,
-      y: 150,
-    },
-  }
+export default function Home(props: Props) {
+  // const cardVariants = {
+  //   visible: (i: number) => ({
+  //     opacity: 1,
+  //     y: 0,
+  //     transition: {
+  //       duration: 1,
+  //       delay: i * .125
+  //     },
+  //   }),
+  //   initial: {
+  //     opacity: 0,
+  //     y: 150,
+  //   },
+  // }
 
   const infoBoxContent = [
     {

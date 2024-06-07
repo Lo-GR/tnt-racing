@@ -3,7 +3,7 @@ import { profiles } from "../../Helpers/config"
 import { motion } from 'framer-motion';
 import TimAward from '../../images/Award-Received.jpg'
 
-export const Drivers = ({ }) => {
+export const Drivers = (props: any) => {
   const cardVariants = {
     visible: (i: number) => ({
       opacity: 1,

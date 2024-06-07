@@ -28,7 +28,7 @@ export const InfoBox = ({ content }: InfoBoxProps) => {
     }
 
     setTimeout(changeCurrentContent, 7000)
-  }, [currentContentIndex])
+  }, [currentContentIndex, content])
 
 
   const infoBoxContentVariants = {

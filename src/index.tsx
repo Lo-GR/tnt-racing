@@ -7,10 +7,7 @@ import logo from './images/TNTLogo.png';
 import Home from './Pages/Home';
 import { headerRoutes } from './Helpers/config';
 import { Error } from './Pages/Error';
-import { Boats } from './Pages/Boats';
-import { Drivers } from './Pages/Drivers';
 import { useState } from 'react';
-import MobileNav from './Components/MobileNav';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement

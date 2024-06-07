@@ -33,7 +33,7 @@ const Layout = () => {
       />
       <Outlet />
       <FooterOne />
-      <MobileNav open={open} handleOpen={handleMobileNav} />
+      {/* <MobileNav open={open} handleOpen={handleMobileNav} /> */}
     </>
   );
 };
@@ -48,16 +48,16 @@ const router = createBrowserRouter([
         element: <Home />,
         errorElement: <Error />,
       },
-      {
-        path: '/boats',
-        element: <Boats />,
-        errorElement: <Error />,
-      },
-      {
-        path: '/drivers',
-        element: <Drivers />,
-        errorElement: <Error />,
-      },
+      // {
+      //   path: '/boats',
+      //   element: <Boats />,
+      //   errorElement: <Error />,
+      // },
+      // {
+      //   path: '/drivers',
+      //   element: <Drivers />,
+      //   errorElement: <Error />,
+      // },
     ],
   },
 ]);

@@ -22,13 +22,13 @@ export const HeaderOne = ({
 }: HeaderOneProps) => {
   return (
     <div className="bg-sp-primary-200 h-[70px] ">
-      <div className="container mx-auto px-8 flex flex-row  h-full">
+      <div className="container mx-auto px-8 flex flex-row  justify-center h-full">
         <div className="flex h-full justify-start items-center">
           <Link to={'/'} className="">
             <img className="h-12" src={logo} />
           </Link>
         </div>
-        <div className="flex-row w-full justify-end items-center h-full space-x-8 hidden lg:flex">
+        {/* <div className="flex-row w-full justify-end items-center h-full space-x-8 hidden lg:flex">
           {headerRoutes.map((route) => {
             return (
               <Link
@@ -39,8 +39,8 @@ export const HeaderOne = ({
               </Link>
             );
           })}
-        </div>
-        <div className="flex lg:hidden items-center justify-end w-full">
+        </div> */}
+        {/* <div className="flex lg:hidden items-center justify-end w-full">
           {open ? (
             <CloseIcon
               fontSize="large"
@@ -54,7 +54,7 @@ export const HeaderOne = ({
               onClick={() => handleOpen()}
             />
           )}
-        </div>
+        </div> */}
       </div>
     </div>
   );

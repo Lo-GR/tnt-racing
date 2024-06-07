@@ -12,7 +12,7 @@ interface ProfileCardTypes {
 export const ProfileCard = ({ profileImage, profileName, profileSubtitle, profileDescription, reverse }: ProfileCardTypes) => {
 
   return (
-    <div className={classNames(reverse, "profile-card-container w-full overflow-hidden bg-sp-tertiary-500 rounded-lg flex items-center justify-evenly flex-col lg:h-[400px]")}>
+    <div className={classNames(reverse, "profile-card-container w-full overflow-hidden rounded-lg flex items-center justify-evenly flex-col lg:h-[400px]")}>
       <div className="h-[300px] w-full lg:h-full lg:w-1/3 justify-center flex">
         <img className="h-full w-full object-cover" src={profileImage} />
       </div>

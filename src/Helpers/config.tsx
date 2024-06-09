@@ -6,7 +6,6 @@ import Tim from "../images/Tim-Driver.jpg"
 // Boats
 import JeepersCreepers from "../images/Sprint-Boat-In-Trailer.jpg"
 import Boat99 from "../images/Sprint-Boat-In-Tent.jpg"
-import placeholder from "../images/TNTLogo.png"
 
 // Sponsors
 import DogHouse from "../images/DogHouse.jpg"
@@ -69,11 +68,11 @@ export const boats = [
     description: "Pending",
     position: "lg:flex-row"
   },
-  {
-    image: placeholder,
-    name: "Boat 04 (Name TBD)",
-    sponsors: [],
-    description: "Pending",
-    position: "lg:flex-row"
-  }
+  // {
+  //   image: placeholder,
+  //   name: "Boat 04 (Name TBD)",
+  //   sponsors: [],
+  //   description: "Pending",
+  //   position: "lg:flex-row"
+  // }
 ]

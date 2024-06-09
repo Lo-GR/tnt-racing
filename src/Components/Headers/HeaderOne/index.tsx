@@ -1,24 +1,13 @@
-import { useEffect, useState } from 'react';
+
 import { Link } from 'react-router-dom';
 
-import MenuIcon from '@mui/icons-material/Menu';
-import CloseIcon from '@mui/icons-material/Close';
 
 type HeaderOneProps = {
   logo: string;
-  headerRoutes: {
-    route: string;
-    title: string;
-  }[];
-  open: boolean;
-  handleOpen: () => void;
 };
 
 export const HeaderOne = ({
   logo,
-  headerRoutes,
-  open,
-  handleOpen,
 }: HeaderOneProps) => {
   return (
     <div className="bg-sp-primary-200 h-[70px] ">

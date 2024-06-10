@@ -11,6 +11,9 @@ import Boat99 from "../images/Sprint-Boat-In-Tent.jpg"
 import DogHouse from "../images/DogHouse.jpg"
 import TDLogo from "../images/TDLogo2.png"
 
+// Images
+import logo from './images/tntlogo.png';
+
 export const headerRoutes = [
   {
     route: '/boats',
@@ -76,3 +79,7 @@ export const boats = [
   //   position: "lg:flex-row"
   // }
 ]
+
+export const images = {
+  logo
+}

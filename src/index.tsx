@@ -3,11 +3,11 @@ import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
 import './index.css';
 import { FooterOne } from './Components/Footers/FooterOne';
 import { HeaderOne } from './Components/Headers/HeaderOne';
-import logo from './images/tntlogo.png';
 import Home from './Pages/Home';
 // import { headerRoutes } from './Helpers/config';
 import { Error } from './Pages/Error';
 import { useState } from 'react';
+import { images } from './Helpers/config';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -23,7 +23,7 @@ const Layout = () => {
   return (
     <>
       <HeaderOne
-        logo={logo}
+        logo={images.logo}
       />
       <Outlet />
       <FooterOne />

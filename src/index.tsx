@@ -6,7 +6,7 @@ import { HeaderOne } from './Components/Headers/HeaderOne';
 import Home from './Pages/Home';
 // import { headerRoutes } from './Helpers/config';
 import { Error } from './Pages/Error';
-import { useState } from 'react';
+// import { useState } from 'react';
 import { images } from './Helpers/config';
 
 const root = ReactDOM.createRoot(
@@ -14,7 +14,7 @@ const root = ReactDOM.createRoot(
 );
 
 const Layout = () => {
-  const [open, setOpen] = useState(false);
+  // const [open, setOpen] = useState(false);
 
   // const handleMobileNav = () => {
   //   setOpen(!open);

@@ -2,7 +2,7 @@ import { BoatCard } from "../../Components/Cards/BoatCard"
 import { boats, images } from "../../Helpers/config"
 import { motion } from 'framer-motion';
 
-export const Boats = ({ }) => {
+export const Boats = (props: any) => {
   const cardVariants = {
     visible: (i: number) => ({
       opacity: 1,

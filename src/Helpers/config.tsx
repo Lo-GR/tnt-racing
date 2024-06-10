@@ -1,18 +1,23 @@
 // Humans
-import Dillon from "../images/Dillon-Racer.jpg"
-import Teri from "../images/Teri-Navigator.jpg"
-import Mike from "../images/Mike-Navigator.jpg"
-import Tim from "../images/Tim-Driver.jpg"
+import Dillon from "../images/dillonracer.jpg"
+import Teri from "../images/terinavigator.jpg"
+import Mike from "../images/mikenavigator.jpg"
+import Tim from "../images/timdriver.jpg"
 // Boats
-import JeepersCreepers from "../images/Sprint-Boat-In-Trailer.jpg"
-import Boat99 from "../images/Sprint-Boat-In-Tent.jpg"
+import JeepersCreepers from "../images/sprintboatintrailer.jpg"
+import Boat99 from "../images/sprintboatintent.jpg"
 
 // Sponsors
-import DogHouse from "../images/DogHouse.jpg"
-import TDLogo from "../images/TDLogo2.png"
+import DogHouse from "../images/doghouse.jpg"
+import TDLogo from "../images/tdlogo.png"
 
 // Images
-import logo from './images/tntlogo.png';
+import logo from '../images/tntlogo.png';
+import boat from '../images/boatturningwithwake.jpg'
+import BoatFlip from "../images/sprintboatflipping.jpg"
+import BoatTurn from "../images/sprintboatturningrace.jpg"
+import JeepersCreepersHeadShot from "../images/jeeperscreeperssprintboat.jpg"
+import TimAward from '../images/awardreceived.jpg'
 
 export const headerRoutes = [
   {
@@ -81,5 +86,10 @@ export const boats = [
 ]
 
 export const images = {
-  logo
+  logo,
+  boat,
+  BoatFlip,
+  BoatTurn,
+  JeepersCreepersHeadShot,
+  TimAward
 }

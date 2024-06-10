@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import TDLogo from "../../../images/TDContractingLogo.png"
+import TDLogo from "../../../images/tdcontractinglogo.png"
 
 export const FooterOne = () => {
 

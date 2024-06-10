@@ -3,9 +3,9 @@ import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
 import './index.css';
 import { FooterOne } from './Components/Footers/FooterOne';
 import { HeaderOne } from './Components/Headers/HeaderOne';
-import logo from './images/TNTLogo.png';
+import logo from './images/tntlogo.png';
 import Home from './Pages/Home';
-import { headerRoutes } from './Helpers/config';
+// import { headerRoutes } from './Helpers/config';
 import { Error } from './Pages/Error';
 import { useState } from 'react';
 
@@ -23,10 +23,7 @@ const Layout = () => {
   return (
     <>
       <HeaderOne
-        open={open}
-        handleOpen={handleMobileNav}
         logo={logo}
-        headerRoutes={headerRoutes}
       />
       <Outlet />
       <FooterOne />

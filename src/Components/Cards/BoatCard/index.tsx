@@ -19,7 +19,7 @@ export const BoatCard = ({ boatImage, boatName, boatSponsors, boatDescription, r
   return (
     <div className={classNames(reverse, "boat-card-container w-full overflow-hidden rounded-lg flex items-center flex-col lg:h-[400px]")}>
       <div className="h-[400px] w-full lg:h-full lg:w-1/2 flex">
-        <img className="h-full w-full object-cover" src={boatImage} />
+        <img className="h-full w-full object-cover" src={boatImage} alt='boat' />
       </div>
       <div className="p-8 w-full text-center flex items-center lg:items-start lg:mt-16 flex-col lg:pt-0 gap-5">
         <h2 className="text-[40px] ">{boatName}</h2>

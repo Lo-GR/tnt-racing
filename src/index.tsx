@@ -16,9 +16,9 @@ const root = ReactDOM.createRoot(
 const Layout = () => {
   const [open, setOpen] = useState(false);
 
-  const handleMobileNav = () => {
-    setOpen(!open);
-  };
+  // const handleMobileNav = () => {
+  //   setOpen(!open);
+  // };
 
   return (
     <>

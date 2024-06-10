@@ -14,7 +14,7 @@ export const HeaderOne = ({
       <div className="container mx-auto px-8 flex flex-row  justify-center h-full">
         <div className="flex h-full justify-start items-center">
           <Link to={'/'} className="">
-            <img className="h-12" src={logo} />
+            <img className="h-12" src={logo} alt='tnt logo' />
           </Link>
         </div>
         {/* <div className="flex-row w-full justify-end items-center h-full space-x-8 hidden lg:flex">

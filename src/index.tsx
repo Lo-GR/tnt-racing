@@ -26,7 +26,7 @@ const Layout = () => {
       <HeaderOne
         logo={images.logo}
       />
-      <h1>Website Coming Soon</h1>
+      <h2 className='text-center my-80'>Website Coming Soon</h2>
       {/* <Outlet /> */}
 
       <FooterOne />

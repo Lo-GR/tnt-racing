@@ -1,6 +1,5 @@
 import ReactDOM from 'react-dom/client';
-// import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
 import './index.css';
 import { FooterOne } from './Components/Footers/FooterOne';
 import { HeaderOne } from './Components/Headers/HeaderOne';
@@ -26,8 +25,7 @@ const Layout = () => {
       <HeaderOne
         logo={images.logo}
       />
-      <h2 className='text-center my-80'>Website Coming Soon</h2>
-      {/* <Outlet /> */}
+      <Outlet />
 
       <FooterOne />
       {/* <MobileNav open={open} handleOpen={handleMobileNav} /> */}
